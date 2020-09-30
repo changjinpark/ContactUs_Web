@@ -4,11 +4,27 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
 <mapper namespace="com.example.mapper.contactMapper">
- 
+ <!-- 
      <select id="selectMember" resultType="Contact">
-        SELECT ID, PW ,NAME FROM TEST
+        SELECT * FROM TEST
     </select>
-
+ -->
+	<insert id="insertContactData">
+		INSERT INTO TB_CONTACTUS_INFO(
+			customer_name, 
+			email, 
+			phone, 
+			subject, 
+			message
+		) 
+		VALUES ( 
+			#{fullName}, 
+			#{Email}, 
+			#{Phone}, 
+			#{Subject}, 
+			#{Message}
+		)
+	</insert>
     
 </mapper>
 

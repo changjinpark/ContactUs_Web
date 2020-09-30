@@ -23,7 +23,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = {RequestMethod.GET, RequestMethod.POST})
 	public String home(Locale locale, Model model, String fullName, 
-			String Email, String Phone, String Subject, String Message) {
+			String Email, String Phone, String Subject, String Message) throws Exception {
 		
 		//logger.info를 사용해서 controller 단에 데이터가 전달되는지 확인
 		logger.info("fullName {}.", fullName);
@@ -33,6 +33,9 @@ public class HomeController {
 		logger.info("Message {}.", Message);
 
 		service.putcontactus(fullName, Email, Phone, Subject, Message);
+		
+		//List<Contact> memberList = service.selectMember();       
+        //model.addAttribute("memberList", memberList);
 
 		return "home";
 	}	

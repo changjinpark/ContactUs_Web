@@ -25,5 +25,11 @@ public class ContactServiceImpl implements ContactService {
 		dao.contactInsert(fullName, Email, Phone, Subject, Message);
 		
 	 }
-
+	/*
+	@Override
+    public List<Contact> selectMember() throws Exception {
+ 
+        return dao.selectMember();
+    }
+	*/
 }
