@@ -9,6 +9,6 @@ Contact Us 웹 페이지 만들기
   - VO 객체 생성
   - MYSQL DB 데이터 저장
 
-![데이터 요청 웹 화면](./data request.jpg)
+![데이터 요청 웹 화면](./data request.JPG)
 
-![데이터 저장](./DB insert sucess.jpg)
+![데이터 저장](./DB insert sucess.JPG)
