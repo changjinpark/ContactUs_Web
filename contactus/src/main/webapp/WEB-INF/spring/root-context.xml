@@ -36,5 +36,7 @@
         destroy-method="clearCache">
         <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
     </bean>
-
+    
+    <context:component-scan base-package="com.mycompany.contactus.dao"></context:component-scan>
+    <context:component-scan base-package="com.mycompany.contactus.service"></context:component-scan>
 </beans>
