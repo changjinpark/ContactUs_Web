@@ -1,7 +1,5 @@
 package com.mycompany.contactus;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -19,21 +17,19 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+
+	@RequestMapping(value = "/", method = {RequestMethod.GET, RequestMethod.POST})
+	public String home(Locale locale, Model model, String fullName, 
+			String Email, String Phone, String Subject, String Message) {
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
+		//logger.info를 사용해서 controller 단에 데이터가 전달되는지 확인
+		logger.info("fullName {}.", fullName);
+		logger.info("Email {}.", Email);
+		logger.info("Phone {}.", Phone);
+		logger.info("Subject {}.", Subject);
+		logger.info("Message {}.", Message);
+
 		
 		return "home";
-	}
-	
+	}	
 }
