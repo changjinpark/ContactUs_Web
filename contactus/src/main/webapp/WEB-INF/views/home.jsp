@@ -9,7 +9,8 @@
 <body>
 <header class="ccheader">
 	<h1>Contact Us</h1>
-    <h2>Changjin Company</h2>	
+    <h2>The Best Home Energy Monitor</h2>	
+    <h3>Changjin Energy Company</h3>	
 </header>
 
 <div class="wrapper">
