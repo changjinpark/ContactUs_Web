@@ -32,6 +32,18 @@
         <input class="ccformfield" type="text" name ="Subject" placeholder="Subject" required>
     </div>
     <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-dropbox fa-2x"></i></span>      
+        <div class="dropdown">
+		  <select class="dropbtn" name="issueType">
+		    <option class="dropdown-content">Select the type of issue</option>
+		    <option>WEB Monitoring Issue</option>
+		    <option>Gateway Issue</option>
+		    <option>PLC communication Issue</option>
+		    <option>AC/DC Power Issue</option>
+		    <option>Others</option>
+		</select>
+    </div></div>
+    <div class="ccfield-prepend">
         <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
         <textarea class="ccformfield" rows="8" name ="Message" placeholder="Message" required></textarea>
     </div>
