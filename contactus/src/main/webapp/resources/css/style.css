@@ -77,6 +77,8 @@ body {
 	cursor:pointer;
 	text-decoration:none;
 	font-weight:bold;
+	width:55px;
+	height:20px;
 }
 .ccbtn:hover{
 	background:#d8850e;
@@ -128,3 +130,49 @@ text-decoration: none;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #00ffff;}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-55%, 50%);
+  border: 1px solid #000000;
+  width: 29%;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 800px;
+  padding: 30px;
+  background-color: white;
+}
+
+.form-container h3{
+	color: black;
+	text-align: center;
+}
+
+/* Set a style for the submit */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  margin-bottom:10px;
+  opacity: 0.7;
+  position: relative;
+  left: 50px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  position: relative;
+  left: 80px;
+}

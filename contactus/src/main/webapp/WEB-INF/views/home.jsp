@@ -48,10 +48,28 @@
         <textarea class="ccformfield" rows="8" name ="Message" placeholder="Message" required></textarea>
     </div>
     <div class="ccfield-prepend">
-        <input class="ccbtn" type="submit" value="Submit">
+        <div class="ccbtn" onclick="openForm()">submit</div>
     </div>
+	<div class="form-popup" id="myForm">
+	  <div class="form-container">
+	    <h3>Do you want to submit?</h3>
+	    <button type="submit" class="btn">Submit</button>
+	    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	  </div>
+	</div>
     </form>
 </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
 
 </body>
 </html>
