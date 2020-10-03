@@ -1,8 +1,10 @@
 package com.mycompany.contactus.service;
 
+import com.mycompany.contact.vo.Contact;
+
 public interface ContactService {
 
-	void putcontactus(String fullName, String Email, String Phone, String Subject, String Message);
+	void putcontactus(Contact contact);
 	
 	//public List<Contact> selectMember() throws Exception;
 	

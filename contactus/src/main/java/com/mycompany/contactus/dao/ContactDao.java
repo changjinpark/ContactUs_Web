@@ -1,8 +1,10 @@
 package com.mycompany.contactus.dao;
 
+import com.mycompany.contact.vo.Contact;
+
 public interface ContactDao {
 
-	void contactInsert(String fullName, String Email, String Phone, String Subject, String Message);
+	void contactInsert(Contact contact);
 	
     //public List<Contact> selectMember() throws Exception;
 	

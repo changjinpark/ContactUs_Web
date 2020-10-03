@@ -1,14 +1,13 @@
 package com.mycompany.contactus.dao;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
+
+import com.mycompany.contact.vo.Contact;
 
 @Repository
 public class ContactDaoImpl implements ContactDao {
@@ -21,20 +20,15 @@ public class ContactDaoImpl implements ContactDao {
     private static final String Namespace = "com.example.mapper.contactMapper";
 	
 	@Override
-	public void contactInsert(String fullName, String Email, String Phone, String Subject, String Message) {
+	public void contactInsert(Contact contact) {
 
-    	
-		logger.info("Email {}.", Email);
+		//logger.info를 사용해서 VO를 이용한 값이 DAO에 전달되는지 확인
+		logger.info("Email {}.", contact.getEmail());
 
-		if(fullName != null && Email != null && Phone != null && Subject != null && Message != null) {
-		Map<String, Object> param = new HashMap<>(); 
-		param.put("fullName", fullName); 
-		param.put("Email", Email);
-		param.put("Phone", Phone);
-		param.put("Subject", Subject);
-		param.put("Message", Message);
+		if(contact.getfullName() != null && contact.getEmail() != null && contact.getPhone() != null && contact.getSubject() != null && contact.getMessage() != null) {
 		
-		sqlSession.insert(Namespace+".insertContactData", param);
+		sqlSession.insert(Namespace+".insertContactData", contact);
+		
 		}
 	}	
 	/*
