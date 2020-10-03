@@ -14,14 +14,16 @@
 			customer_name, 
 			email, 
 			phone, 
-			subject, 
+			subject,
+			type_of_issue, 
 			message
 		) 
 		VALUES ( 
 			#{fullName}, 
 			#{Email}, 
 			#{Phone}, 
-			#{Subject}, 
+			#{Subject},
+			#{issueType}, 
 			#{Message}
 		)
 	</insert>

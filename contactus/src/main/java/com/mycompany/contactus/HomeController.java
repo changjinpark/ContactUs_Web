@@ -27,8 +27,8 @@ public class HomeController {
 	public String home(Locale locale, Model model, @ModelAttribute Contact contact) throws Exception {
 		
 		//logger.info를 사용해서 VO 값이 controller 단에 전달되는지 확인
-		logger.info("fullName {}.", contact.getfullName());
-	
+		logger.info("issue Type {}.", contact.getIssueType());
+		
 		service.putcontactus(contact);
 		
 		//List<Contact> memberList = service.selectMember();       

@@ -25,7 +25,8 @@ public class ContactDaoImpl implements ContactDao {
 		//logger.info를 사용해서 VO를 이용한 값이 DAO에 전달되는지 확인
 		logger.info("Email {}.", contact.getEmail());
 
-		if(contact.getfullName() != null && contact.getEmail() != null && contact.getPhone() != null && contact.getSubject() != null && contact.getMessage() != null) {
+		if(contact.getfullName() != null && contact.getEmail() != null && contact.getPhone() != null 
+				&& contact.getSubject() != null && contact.getMessage() != null	&& contact.getIssueType() != null			) {
 		
 		sqlSession.insert(Namespace+".insertContactData", contact);
 		

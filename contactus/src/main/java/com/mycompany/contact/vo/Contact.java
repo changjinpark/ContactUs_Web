@@ -7,6 +7,7 @@ public class Contact {
 	private String Phone; 
 	private String Subject; 
 	private String Message;
+	private String issueType;
 	public String getfullName() { return fullName; } 
 	public void setfullName(String fullName) { this.fullName = fullName; } 
 	public String getEmail() { return Email; } 
@@ -17,5 +18,6 @@ public class Contact {
 	public void setMessage(String Message) { this.Message = Message; } 
 	public String getSubject() { return Subject; } 
 	public void setSubject(String Subject) { this.Subject = Subject; }
-
+	public String getIssueType() { return issueType; } 
+	public void setIssueType(String issueType) { this.issueType = issueType; }
 }
