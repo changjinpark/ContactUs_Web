@@ -5,6 +5,7 @@
 	<title>Changjin Company</title>
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet">	
+	<script src="${pageContext.request.contextPath}/resources/js/popup.js"></script>
 </head>
 <body>
 <header class="ccheader">
@@ -59,17 +60,5 @@
 	</div>
     </form>
 </div>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-
-</script>
-
 </body>
 </html>
