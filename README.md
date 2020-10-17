@@ -1,16 +1,17 @@
 # ContactUs_Web
 Contact Us 웹 페이지 만들기
 
-기능 구현
-
-  - 화면단(JSP)와 Controller 연동 구현
-  - Controller와 Service 연동 구현
-  - Service(ServiceImpl)와 DAO(DAOImpl), DAO(DAOImpl)와 Mapper(.XML) 연동 구현
-  - VO 객체 생성
-  - MYSQL DB 데이터 저장
- 
+주요 구현 내용 요약
+  - VO(Contact.java)를 이용하여 view(home.jsp) 화면의 데이터를 Controller(HomeController.java)로 전송 구현
+  - Controller가 view에서 받은 데이터를 Service(ContactServiceImpl.java)로 전송 구현
+  - Service에서 받은 데이터를 DAO(ContactDaoImpl.java)로 전송 구현
+  - DAO와 Mapper(contactMapper.xml)의 연동 구현
+  - MYSQL DB 저장용 테이블 생성
+  - DB 저장을 위한 개발환경 설정(Spring + MyBatis + MySQL 설정)
+  - view 화면에 콤보박스 기능 추가/팝업창 기능 추가
+  
 [수정]기본 화면
-![fix view](https://user-images.githubusercontent.com/64358371/96347440-bcb8a880-10dc-11eb-915e-937300d26a93.jpg)
+![fix view](https://user-images.githubusercontent.com/64358371/96347632-f3db8980-10dd-11eb-8b10-65350c6709c8.jpg)
 콤보박스 기능 추가
 ![fix view_combobox](https://user-images.githubusercontent.com/64358371/96347442-c0e4c600-10dc-11eb-97d4-77a004d5e54f.jpg)
 팝업창 기능 추가
