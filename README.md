@@ -1,6 +1,9 @@
 # ContactUs_Web
 Contact Us 웹 페이지 만들기
 
+Contact Us 페이지란?
+고객들이 회사 제품에 불만/문의사항이 있을 때 회사 홈페이지의 Contact Us 페이지에서 문의를 할 수 있도록 하는 페이지
+
 주요 구현 내용 요약
   - VO(Contact.java)를 이용하여 view(home.jsp) 화면의 데이터를 Controller(HomeController.java)로 전송 구현
   - Controller가 view에서 받은 데이터를 Service(ContactServiceImpl.java)로 전송 구현
